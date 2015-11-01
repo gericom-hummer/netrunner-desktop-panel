@@ -25,8 +25,6 @@ if (freeEdges["bottom"] == true) {
     panel.location = "top";
 }
 
-panel.height = screenGeometry(panel.screen).height > 1024 ? 35 : 30
-
 panel.addWidget("org.kde.plasma.netrunnerkicker")
 
 var eitm = panel.addWidget("org.kde.plasma.expandingiconstaskmanager")
