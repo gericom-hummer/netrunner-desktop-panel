@@ -33,6 +33,7 @@ var eitm = panel.addWidget("org.kde.plasma.expandingiconstaskmanager")
 eitm.currentConfigGroup = ["Configuration", "General"]
 eitm.writeConfig("launchers" ,"file:///usr/share/applications/org.kde.dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop")
 eitm.writeConfig("showOnlyCurrentDesktop", true)
+eitm.writeConfig("maxStripes", 1)
 
 var yakuakeIcon = panel.addWidget("org.kde.plasma.icon")
 yakuakeIcon.currentConfigGroup = ["General"]
