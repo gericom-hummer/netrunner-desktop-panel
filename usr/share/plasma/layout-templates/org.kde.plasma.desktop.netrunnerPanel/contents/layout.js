@@ -25,7 +25,16 @@ if (freeEdges["bottom"] == true) {
     panel.location = "top";
 }
 
+
+panel.height = screenGeometry(panel.screen).height >= 1024 ? 58 : 34
+var screenWidth = screenGeometry(panel.screen).width;
+panel.alignment = "center"
+panel.minimumLength = screenWidth >= 1200 ? screenWidth * 0.7 : screenWidth
+panel.maximumLength = screenWidth >= 1200 ? screenWidth * 0.7 : screenWidth
+
 panel.addWidget("org.kde.plasma.netrunnerkicker")
+kicker.currentConfigGroup = ["Shortcuts"]
+kicker.writeConfig("global", "Alt+F1")
 
 var eitm = panel.addWidget("org.kde.plasma.expandingiconstaskmanager")
 eitm.currentConfigGroup = ["Configuration", "General"]
