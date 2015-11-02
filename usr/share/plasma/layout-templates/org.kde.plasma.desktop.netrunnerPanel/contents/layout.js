@@ -32,7 +32,7 @@ panel.alignment = "center"
 panel.minimumLength = screenWidth >= 1200 ? screenWidth * 0.7 : screenWidth
 panel.maximumLength = screenWidth >= 1200 ? screenWidth * 0.7 : screenWidth
 
-panel.addWidget("org.kde.plasma.netrunnerkicker")
+var kicker = panel.addWidget("org.kde.plasma.netrunnerkicker")
 kicker.currentConfigGroup = ["Shortcuts"]
 kicker.writeConfig("global", "Alt+F1")
 
