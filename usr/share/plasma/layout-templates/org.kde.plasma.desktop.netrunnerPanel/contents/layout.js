@@ -26,7 +26,7 @@ if (freeEdges["bottom"] == true) {
 }
 
 
-panel.height = screenGeometry(panel.screen).height >= 1024 ? 58 : 44
+panel.height = gridUnit * 2.3
 
 var kicker = panel.addWidget("org.kde.plasma.netrunnerkicker")
 kicker.currentConfigGroup = ["Shortcuts"]
