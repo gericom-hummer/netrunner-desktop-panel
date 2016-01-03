@@ -28,7 +28,7 @@ if (freeEdges["bottom"] == true) {
 
 panel.height = gridUnit * 2.3
 
-var kicker = panel.addWidget("org.kde.plasma.netrunnerkicker")
+var kicker = panel.addWidget("org.kde.plasma.netrunnerkickerdash")
 kicker.currentConfigGroup = ["Shortcuts"]
 kicker.writeConfig("global", "Alt+F1")
 
